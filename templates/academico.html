@@ -13,8 +13,8 @@
         <h4><i class="bi bi-search"></i> ¿El aprendiz no ha alcanzado los resultados esperados?</h4>
         <p>Verifica si uno o más resultados de aprendizaje no fueron logrados por el aprendiz.</p>
         <div class="d-flex gap-3">
-            <button class="btn btn-menta" onclick="mostrarPaso('paso2')"><i class="bi bi-check-circle-fill"></i> Sí, no los ha alcanzado</button>
-            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary"><i class="bi bi-x-circle-fill"></i> No, volver al inicio</a>
+            <button class="btn btn-menta" onclick="mostrarPaso('paso2')"><i class="bi bi-check-circle-fill"></i> No los ha alcanzado</button>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary"><i class="bi bi-x-circle-fill"></i> Volver al inicio</a>
         </div>
     </div>
 
@@ -32,8 +32,8 @@
         <h4><i class="bi bi-bar-chart-line-fill"></i> ¿El aprendiz mejoró después del primer llamado?</h4>
         <p>Evalúa si hay avances en su desempeño y compromiso con el proceso formativo.</p>
         <div class="d-flex gap-3">
-            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary"><i class="bi bi-check-circle-fill"></i> Sí, proceso finalizado</a>
             <button class="btn btn-menta" onclick="mostrarPaso('paso4')"><i class="bi bi-x-circle-fill"></i> No, aplicar segundo llamado</button>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary"><i class="bi bi-check-circle-fill"></i> Sí, proceso finalizado</a>
         </div>
     </div>
 
@@ -67,8 +67,8 @@
         <h4><i class="bi bi-pin-angle-fill"></i> Seguimiento del Plan</h4>
         <p>Haz seguimiento a las actividades pactadas. Verifica cumplimiento de parte del aprendiz.</p>
         <div class="d-flex gap-3">
-            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary"><i class="bi bi-check-circle-fill"></i> Cumplió, proceso finalizado</a>
             <button class="btn btn-menta" onclick="mostrarPaso('paso8')"><i class="bi bi-x-circle-fill"></i> No cumplió</button>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary"><i class="bi bi-check-circle-fill"></i> Cumplió, proceso finalizado</a>
         </div>
     </div>
 

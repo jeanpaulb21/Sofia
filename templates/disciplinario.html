@@ -63,12 +63,12 @@
         <h4><i class="bi bi-arrow-repeat"></i> ¿El aprendiz reincidió?</h4>
         <p>Si vuelve a cometer la misma falta, deberás elaborar un plan de mejoramiento disciplinario.</p>
         <div class="d-flex gap-3">
-            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
-                <i class="bi bi-check-circle-fill me-2"></i> No, proceso finalizado
-            </a>
             <button class="btn btn-menta text-white" onclick="mostrarPaso('paso5')">
                 <i class="bi bi-x-circle-fill me-2 text-white"></i> Sí, elaborar plan
             </button>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                <i class="bi bi-check-circle-fill me-2"></i> No, proceso finalizado
+            </a>
         </div>
     </div>
 
@@ -90,12 +90,12 @@
         <h4><i class="bi bi-clipboard-data-fill"></i> ¿El aprendiz cumplió el plan?</h4>
         <p>Haz seguimiento al cumplimiento de los compromisos acordados.</p>
         <div class="d-flex gap-3">
-            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
-                <i class="bi bi-check-circle-fill me-2"></i> Sí, proceso finalizado
-            </a>
             <button class="btn btn-menta text-white" onclick="mostrarPaso('paso7')">
                 <i class="bi bi-x-circle-fill me-2 text-white"></i> No, remitir al Comité
             </button>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                <i class="bi bi-check-circle-fill me-2"></i> Sí, proceso finalizado
+            </a>
         </div>
     </div>
 
