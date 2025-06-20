@@ -1,0 +1,52 @@
+:root {
+    --verde-menta: #b2f2bb;
+    --verde-menta-oscuro: #69db7c;
+    --verde-menta-hover: #38d17a;
+    --blanco: #ffffff;
+    --gris-texto: #333;
+}
+
+body {
+    background-color: var(--blanco);
+    color: var(--gris-texto);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+}
+
+.navbar {
+    background-color: var(--verde-menta);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--gris-texto);
+}
+
+.footer {
+    background-color: var(--verde-menta-oscuro);
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-menta {
+    background-color: var(--verde-menta-oscuro);
+    color: var(--blanco);
+    border: none;
+}
+
+.btn-menta:hover {
+    background-color: var(--verde-menta-hover);
+    color: var(--blanco);
+}
+
+h1, h2, h4 {
+    color: var(--verde-menta-oscuro);
+}
+
+.list-group-item {
+    background-color: var(--blanco);
+    border: 1px solid #d9fbd0;
+}
