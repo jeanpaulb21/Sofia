@@ -1,16 +1,23 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 {% extends 'layout.html' %}
 
 {% block content %}
 <div class="text-center">
-    <h1 class="mb-4">👋 ¡Bienvenido, instructor!</h1>
+    <h1 class="mb-4"><i class="bi bi-person-circle text-primary"></i> Bienvenido, instructor</h1>
     <p class="lead">Soy tu asistente virtual para orientarte en los procesos académicos y disciplinarios. ¿Con qué deseas ayuda hoy?</p>
 
     <div class="d-grid gap-3 col-12 col-md-6 mx-auto mt-5">
-        <a href="{{ url_for('academico') }}" class="btn btn-menta btn-lg">📚 Medidas Formativas Académicas</a>
-        <a href="{{ url_for('disciplinario') }}" class="btn btn-menta btn-lg">⚖️ Protocolo Disciplinario</a>
-        <a href="{{ url_for('formatos') }}" class="btn btn-outline-secondary btn-lg">📥 Descargar formatos</a>
+        <a href="{{ url_for('academico') }}" class="btn btn-menta btn-lg text-white">
+            <i class="bi bi-journals me-2 text-white"></i> Medidas Formativas Académicas
+        </a>
+        <a href="{{ url_for('disciplinario') }}" class="btn btn-menta btn-lg text-white">
+            <i class="bi bi-shield-check me-2 text-white"></i> Protocolo Disciplinario
+        </a>
+        <a href="{{ url_for('formatos') }}" class="btn btn-outline-secondary btn-lg">
+            <i class="bi bi-file-earmark-arrow-down me-2"></i> Descargar formatos
+        </a>
     </div>
 </div>
 {% endblock %}
